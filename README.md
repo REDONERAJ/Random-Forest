@@ -1,99 +1,57 @@
-# Breast Cancer Diagnosis Predictor (Random Forest + Flask)
+# 🌳 Decision Tree Diabetes Progression Predictor
 
-This project is a **web-based machine learning application** that predicts whether a breast lump is **Benign** (non-cancerous) or **Malignant** (cancerous) using a **Random Forest Classifier** trained on the **Breast Cancer Wisconsin Diagnostic dataset** from `scikit-learn`.
-
-The app provides a simple, user-friendly form that only requires **6 key tumor features** as input, each with example placeholder values for ease of use.
-
----
-
-## 🚀 Features
-- **Random Forest Classifier** trained on a well-known medical dataset
-- Minimal input: only **6 important numeric features**
-- Clean and responsive Flask web interface
-- Real-time prediction on form submission
-- Example placeholders so users don’t need to know valid ranges
-
----
+## 📌 About
+Decision Tree Regression is a non-linear model that predicts a target variable by splitting the dataset into branches based on feature values. It uses if-else rules to form a tree structure, where each leaf node represents a predicted value, making it easy to interpret and visualize.
 
 ## 📂 Project Structure
-
-breast-cancer-diagnosis/
-│
-├── app.py                              # Main Flask app
-├── model.py                            # Model training script
-├── breast_cancer_diagnosis_model.pkl  # Saved Random Forest classifier model
+```
+├── model.py        # Trains the Decision Tree model on the Diabetes dataset
+├── app.py          # Flask app to serve predictions
 ├── templates/
-│   └── index.html                      # Web interface template
-├── requirements.txt                    # Python dependencies
-└── README.md                          # Project documentation
-
-
-
----
+│   └── index.html  # Interactive UI for user input
+├── decision_tree_diabetes.pkl  # Saved model file
+└── requirements.txt # Project dependencies
+```
 
 ## 📊 Dataset
+We use the Diabetes dataset from `sklearn.datasets`, which contains medical details to predict disease progression.
 
-The app uses the **Breast Cancer Wisconsin Diagnostic Dataset** from `scikit-learn`, which contains **30 numeric features** computed from digitized images of fine needle aspirate (FNA) of a breast mass.  
-The prediction target is:
-- **0** → Malignant (cancerous)
-- **1** → Benign (non-cancerous)
+**Features used:**
+- Age (years)
+- BMI (kg/m²)
+- Blood Pressure (mm Hg)
+- S5 Serum Measurement (lab test)
+- S1 Serum Measurement (lab test)
 
-⚠️ For the web form, only 6 of these features are requested from the user:
-- Mean Radius (e.g., 14.2)
-- Mean Texture (e.g., 20.1)
-- Mean Perimeter (e.g., 92.0)
-- Mean Area (e.g., 654.5)
-- Mean Smoothness (e.g., 0.095)
-- Mean Compactness (e.g., 0.084)
+**Target:** A quantitative measure of diabetes progression one year after baseline.
 
-The remaining features are filled automatically with dataset mean values to keep predictions accurate.
-
----
-
-## 🛠 Installation & Usage
-
-### 1️⃣ Clone the repository
-git clone https://github.com/your-username/breast-cancer-flask.git
-cd breast-cancer-flask
-
-
-### 2️⃣ Install dependencies
-pip install -r requirements.txt
-
-
-### 3️⃣ Train the model (optional if `.pkl` already included)
-python model.py
-
-
-### 4️⃣ Run the Flask app
-python app.py
-
-
-### 5️⃣ Open in browser
-Go to:
-http://127.0.0.1:5000
-
-
----
-
-## 🖥 Example Prediction
-Enter the 6 feature values in the form (examples already in placeholders) and click **"Predict Diagnosis"**.  
-You will receive:
-- **Benign** → Non-cancerous tumor  
-- **Malignant** → Cancerous tumor
-
----
+## 🚀 How to Run
+1. Clone this repository
+2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Train the model (optional, already trained in repo)
+   ```bash
+   python model.py
+   ```
+4. Run the Flask app
+   ```bash
+   python app.py
+   ```
+5. Open browser and go to: [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
 
 ## 📦 Requirements
-Flask
-scikit-learn
-pandas
-numpy
-joblib
+- Flask
+- scikit-learn
+- pandas
+- numpy
+- joblib
 
-# Screenshots
-<img width="1366" height="640" alt="Screenshot 2025-08-10 230358" src="https://github.com/user-attachments/assets/cb7f64d3-02d5-413e-ab3c-99dba4d9dd98" />
-<img width="1366" height="647" alt="Screenshot 2025-08-10 230435" src="https://github.com/user-attachments/assets/a2ca1afb-8b2c-4e01-82bc-8c9363abaa1a" />
-<img width="1366" height="644" alt="Screenshot 2025-08-10 230446" src="https://github.com/user-attachments/assets/c37fc148-9eac-4824-b15c-d5b765725152" />
 
----
+## 🖼️ Screenshots
+Add your project screenshots here for better visualization.
+
+Example:
+![App Screenshot](screenshots/app.png)
+![Model Output](screenshots/output.png)
