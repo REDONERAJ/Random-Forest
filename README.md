@@ -17,14 +17,16 @@ The app provides a simple, user-friendly form that only requires **6 key tumor f
 
 ## 📂 Project Structure
 
-project/
-│-- model.py # Trains the Random Forest model and saves it
-│-- app.py # Flask app to serve predictions
-│-- templates/
-│ └── index.html # Web interface form
-│-- requirements.txt # Python dependencies
-│-- random_forest_breast_cancer.pkl # Trained model file (after running model.py)
-│-- README.md
+breast-cancer-diagnosis/
+│
+├── app.py                              # Main Flask app
+├── model.py                            # Model training script
+├── breast_cancer_diagnosis_model.pkl  # Saved Random Forest classifier model
+├── templates/
+│   └── index.html                      # Web interface template
+├── requirements.txt                    # Python dependencies
+└── README.md                          # Project documentation
+
 
 
 ---
