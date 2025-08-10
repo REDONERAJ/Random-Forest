@@ -59,10 +59,7 @@ _All others are set to their dataset averages to keep predictions accurate._
 ---
 
 ## 🖼️ Screenshots
-<<<<<<< HEAD
-=======
 <img width="1366" height="640" alt="Screenshot 2025-08-10 230358" src="https://github.com/user-attachments/assets/2cca37b6-7d55-4575-a301-98c05b3550d3" />
 <img width="1366" height="647" alt="Screenshot 2025-08-10 230435" src="https://github.com/user-attachments/assets/a6ee3909-66d1-4529-9589-8d3e750bf806" />
 <img width="1366" height="644" alt="Screenshot 2025-08-10 230446" src="https://github.com/user-attachments/assets/1a077cea-6428-4f1d-b94f-b8fb0e6054c3" />
->>>>>>> 4d6afd9cc839dceba63e9c4e574e54403d745385
 
