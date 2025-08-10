@@ -1,45 +1,53 @@
-# 🌳 Decision Tree Diabetes Progression Predictor
+# 🩺 Breast Cancer Diagnosis Predictor (Random Forest + Flask)
 
-## 📌 About
-Decision Tree Regression is a non-linear model that predicts a target variable by splitting the dataset into branches based on feature values. It uses if-else rules to form a tree structure, where each leaf node represents a predicted value, making it easy to interpret and visualize.
+This project is a web-based machine learning application that predicts whether a breast lump is **Benign** (non-cancerous) or **Malignant** (cancerous) using a Random Forest Classifier trained on the Breast Cancer Wisconsin Diagnostic dataset from `scikit-learn`.
+
+The app provides a simple, user-friendly form that only requires 6 key tumor features as input, each with example placeholder values for ease of use.
+
+---
+
+## 🚀 Features
+- Predicts breast cancer diagnosis using only 6 user-input numeric features
+- Random Forest Classifier trained on established dataset
+- Responsive Flask web interface
+- Example placeholders for user convenience
+
+---
 
 ## 📂 Project Structure
 ```
-├── model.py        # Trains the Decision Tree model on the Diabetes dataset
-├── app.py          # Flask app to serve predictions
+breast-cancer-diagnosis/
+│
+├── app.py                               # Main Flask app
+├── model.py                             # Model training script
+├── breast_cancer_diagnosis_model.pkl    # Saved Random Forest classifier model
 ├── templates/
-│   └── index.html  # Interactive UI for user input
-├── decision_tree_diabetes.pkl  # Saved model file
-└── requirements.txt # Project dependencies
+│   └── index.html                       # Web interface template
+├── requirements.txt                     # Python dependencies
+└── README.md                            # Project documentation
 ```
 
+---
+
 ## 📊 Dataset
-We use the Diabetes dataset from `sklearn.datasets`, which contains medical details to predict disease progression.
 
-**Features used:**
-- Age (years)
-- BMI (kg/m²)
-- Blood Pressure (mm Hg)
-- S5 Serum Measurement (lab test)
-- S1 Serum Measurement (lab test)
+Uses the **Breast Cancer Wisconsin Diagnostic Dataset** from `scikit-learn`, featuring 30 computed imaging features.
 
-**Target:** A quantitative measure of diabetes progression one year after baseline.
+**Prediction target:**
+- `0` → Malignant (cancerous)
+- `1` → Benign (non-cancerous)
 
-## 🚀 How to Run
-1. Clone this repository
-2. Install dependencies
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Train the model (optional, already trained in repo)
-   ```bash
-   python model.py
-   ```
-4. Run the Flask app
-   ```bash
-   python app.py
-   ```
-5. Open browser and go to: [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+**The web form collects these 6 features:**
+- Mean Radius (e.g., 14.2)
+- Mean Texture (e.g., 20.1)
+- Mean Perimeter (e.g., 92.0)
+- Mean Area (e.g., 654.5)
+- Mean Smoothness (e.g., 0.095)
+- Mean Compactness (e.g., 0.084)
+
+_All others are set to their dataset averages to keep predictions accurate._
+
+---
 
 ## 📦 Requirements
 - Flask
@@ -48,10 +56,7 @@ We use the Diabetes dataset from `sklearn.datasets`, which contains medical deta
 - numpy
 - joblib
 
+---
 
 ## 🖼️ Screenshots
-Add your project screenshots here for better visualization.
 
-Example:
-![App Screenshot](screenshots/app.png)
-![Model Output](screenshots/output.png)
