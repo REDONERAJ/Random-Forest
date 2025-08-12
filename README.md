@@ -1,4 +1,4 @@
-# 🩺 Breast Cancer Diagnosis Predictor (Random Forest + Flask)
+# Breast Cancer Diagnosis Predictor (Random Forest + Flask)
 
 This project is a web-based machine learning application that predicts whether a breast lump is **Benign** (non-cancerous) or **Malignant** (cancerous) using a Random Forest Classifier trained on the Breast Cancer Wisconsin Diagnostic dataset from `scikit-learn`.
 
@@ -6,7 +6,7 @@ The app provides a simple, user-friendly form that only requires 6 key tumor fea
 
 ---
 
-## 🚀 Features
+##  Features
 - Predicts breast cancer diagnosis using only 6 user-input numeric features
 - Random Forest Classifier trained on established dataset
 - Responsive Flask web interface
@@ -14,7 +14,7 @@ The app provides a simple, user-friendly form that only requires 6 key tumor fea
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ```
 breast-cancer-diagnosis/
 │
@@ -29,7 +29,7 @@ breast-cancer-diagnosis/
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 Uses the **Breast Cancer Wisconsin Diagnostic Dataset** from `scikit-learn`, featuring 30 computed imaging features.
 
@@ -49,7 +49,7 @@ _All others are set to their dataset averages to keep predictions accurate._
 
 ---
 
-## 📦 Requirements
+## Requirements
 - Flask
 - scikit-learn
 - pandas
@@ -58,7 +58,7 @@ _All others are set to their dataset averages to keep predictions accurate._
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 <img width="1366" height="640" alt="Screenshot 2025-08-10 230358" src="https://github.com/user-attachments/assets/2cca37b6-7d55-4575-a301-98c05b3550d3" />
 <img width="1366" height="647" alt="Screenshot 2025-08-10 230435" src="https://github.com/user-attachments/assets/a6ee3909-66d1-4529-9589-8d3e750bf806" />
 <img width="1366" height="644" alt="Screenshot 2025-08-10 230446" src="https://github.com/user-attachments/assets/1a077cea-6428-4f1d-b94f-b8fb0e6054c3" />
